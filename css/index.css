@@ -308,11 +308,20 @@ center {
     font-size: 15px;
     transition: all .3s ease-out;
 }
+.buyNow-btn2 a {
+    text-decoration: none;
+    color: white;
+}
 
 .buyNow-btn2:hover {
     background-color: transparent;
     color: #000;
 }
+.buyNow-btn2 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 
 .margin-left {
     margin-left: 3%;
