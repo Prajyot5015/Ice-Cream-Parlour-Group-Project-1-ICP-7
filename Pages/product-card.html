@@ -11,8 +11,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="./../css/product-card.css">
         <link rel="stylesheet" href="./../css/header.css">
-        <script src="./../JS/header.js"></script>
-        <script src="./../JS/index.js"></script>
+        <link rel="stylesheet" href="./../css/footer.css">
+        <link rel="stylesheet" href="./../css/header.css">
+            <script src="./../JS/header.js"></script>
+            <script src="./../JS/index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
@@ -20,14 +22,14 @@
     </head>
     <body>
         <!--header-->
-        <div class="nav-container flex" id="nav">
-            <div class="right-flex flex">
-                <img src="./../imgs/menu.png" height="40px" class="hamburger" onclick="openNavs()" alt="">
-                <a href="./../index.html"> <img src="./../imgs/logo.png" class="logo" alt=""></a>
+        <div class="nav-container-main1 flex-display">
+            <div class="right-flex flex-display">
+                <img src="./../imgs/menu.png" height="40px" class="hamburger-img-nav" onclick="openNav()" alt="">
+                <a href="./index.html"> <img src="./../imgs/logo.png" class="navigationbar-logo" alt=""></a>
             </div>
             <div class="mid-flex">
-                <ul class="menu-list flex" type="none">
-                    <li><a href="../index.html">Home</a></li>
+                <ul class="menu-list flex-display" type="none">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="./../Pages/about-us.html">About Us</a></li>
                     <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
                     <li><a href="./../Pages/services.html">Services</a></li>
@@ -37,11 +39,40 @@
                 <img src="./../icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
                 <a href="./../Pages/login-page.html"><img src="./../icons/add-contact.png" class="nav-icons login-icon"
                         alt=""></a>
-                <img src="./../icons/heart.png" class="nav-icons  heart-icon" alt="">
+                <a href="./../Pages/review-page.html"><img src="./../icons/heart.png" class="nav-icons  heart-icon" alt=""></a>
                 <a href="./../Pages/add-to-cart.html"><img src="./../icons/shopping-bag.png" class="nav-icons" alt=""
                         onclick="openCarts()"></a>
             </div>
         </div>
+        <header>
+    
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
+                <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
+                <h2 class="search-title">And Hit Enter...</h2>
+                <div class="overlay-content">
+                    <form>
+                        <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
+                    </form>
+                </div>
+            </div>
+            <!-- <div id="mySidenav1" class="sidenav1">
+                <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
+                <p class="cart1">Shopping Cart</p>
+                <hr>
+            </div> -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="menu-list" type="none">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./../Pages/about-us.html">About Us</a></li>
+                    <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+                    <li><a href="./../Pages/services.html">Services</a></li>
+                </ul>
+            </div>
+    
+    
+        </header>
       
         <!--header ends-->
      <div class="main-img img-fluid" alt="first-img" style="background-image:url('./../imgs/product-card/pro-main-img.jpg');background-repeat:no-repeat;background-size:cover;";>
@@ -250,7 +281,66 @@ No products are available.
    </div>
 </div>
 <!--product section ends-->
-   
+<!--header start-->
+<footer class="main">
+
+    <div class="foot ">Quick Links
+        <hr>
+
+        <div class="footer"><i class="fa-solid fa-house fa-sol"></i>&nbsp;&nbsp;<a href="./../index.html"
+                class="b">Home</a>
+        </div>
+        <div class="footer "><i class="fa-solid fa-gear fa-sol"></i>&nbsp;&nbsp;<a href="./../Pages/services.html"
+                class="b">Services
+            </a></div>
+        <div class="footer "><i class="fa-solid fa-list fa-sol"></i>&nbsp;&nbsp;&nbsp;<a href="./../Pages/menu-page.html"
+                class="b">Menu</a></div>
+        <div class="footer "><i class="fa-solid fa-cart-shopping fa-sol"></i>&nbsp;&nbsp;<a href="./../Pages/product-card.html"
+                class="b">Store</a></div>
+        <div class="footer "><i class="fa-solid fa-file-pen fa-sol"></i>&nbsp;&nbsp;<a href="./../Pages/registration.html"
+                class="b">Registration</a></div>
+        <div class="footer "><i class="fa-solid fa-thumbs-up fa-sol"></i>&nbsp;&nbsp;<a href="./../Pages/review-page.html"
+                class="b">Review</a></div>
+        <div class="footer "><i class="fa-solid fa-user fa-sol"></i>&nbsp;&nbsp;<a href="./../Pages/about-us.html"
+                class="b">About Us</a></div>
+
+
+    </div>
+
+
+    <div class="contact1">Contact Us
+        <hr>
+        <div class="footer"><i class="fa-solid fa-phone-volume fa-sol"></i>&nbsp;&nbsp;<a href="tel:7744049590"
+                class="b">+91 7744049590</a></div>
+        <div class="footer "><i class="fa-solid fa-envelope fa-sol"></i>&nbsp;&nbsp;<a
+                href="mailto: bhushanpotdar3@gmail.com" class="bb"> bhushanpotdar3@gmail.com</a></div>
+
+        <div class="footer mt-4">&nbsp;&nbsp;<a href="https://www.instagram.com/bhushan_potdar_19" onclick="return ready()" class="a"
+                target="_blank"><i class="fa-brands fa-instagram fa-brand"></i></a>&emsp;<a
+                href="https://www.linkedin.com/in/bhushan-potdar-62283a2a7/" onclick="return ready()" class="a" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-brand"></i></a>&emsp;<a href="https://wa.me/7744049590" onclick="return ready()"
+                class="a" target="_blank"><i class="fa-brands fa-whatsapp fa-brand"></i></a>
+            &emsp;<a href="https://github.com/bhushanpotdar19" onclick="return ready()" class="a" target="_blank"><i
+                    class="fa-brands fa-github fa-brand"></i></a></div>
+        <br>
+
+    </div>
+    <div class="location">Location
+        <hr>
+        <div class="footer"><i class="fa-solid fa-location-dot fa-sol"></i></i>&nbsp;&nbsp;<a
+                href="https://maps.app.goo.gl/TCA1th79iKR1wiRE9" class="b">107,
+                Deur BK, Tal-Dhule, <br>Dist-Dhule -424302
+            </a></div>
+        <div class="footer "><iframe class="mapl"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d777.7157158970201!2d74.4609393!3d20.9038021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdeef04875b6c27%3A0xb9b55ff007fa15d1!2sWF36%2BGHV%2C%20Deur%20Budruk%2C%20Maharashtra%20424302!5e1!3m2!1sen!2sin!4v1712915607325!5m2!1sen!2sin"
+                width="280" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+</footer>
+   <!--footer ends-->
 
    
 <script>

@@ -361,6 +361,7 @@ header{
     text-align: center;
     background-color: #fff;
     width: 250px;
+    height:500px;
    padding: 5px 10px;
     margin: 50px;
    box-shadow:1px 1px 12px #e83e8c;
@@ -391,8 +392,8 @@ header{
     text-align: center;
   }
   .parent-card{
-     display: flex;
-     flex-direction: row;
+    display: flex;
+     justify-content: center;
 
   }
 
