@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+hr {
+    width: 200px;
+    background: #000;
+    height: 5px !important;
+}
+
+.time {
+    width: 400px;
+}
+
+.buyNow-btn1 {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px 10px;
+    background-color: #000;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .3s ease-out;
+}
+
+.buyNow-btn1:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.banner1 {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    width: 90%;
+}
+
+.banner2 {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    width: 90%;
+}
+
+.banner2-badge {
+    border: none;
+    border-radius: 50px 30px 50px 0;
+}
+
+.banner3 {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    width: 90%;
+}
+
+.banner-flex {
+    flex: 1 1 250px;
+
+}
+
+/* Media Query */
+
+@media screen and (max-width: 500px) {
+    .time {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .women {
+        display: none;
+    }
+
+    .heading1 {
+        font-size: 10px;
+    }
+
+    .time-container {
+        padding: 2px;
+    }
+}
