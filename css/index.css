@@ -317,6 +317,11 @@ center {
     background-color: transparent;
     color: #000;
 }
+.buyNow-btn2 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 
 .margin-left {
     margin-left: 3%;
